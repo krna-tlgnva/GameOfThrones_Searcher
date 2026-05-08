@@ -1,0 +1,52 @@
+name: flutter_testing_app
+description: A Flutter app that combines REST API data and local persistence.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.1
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icons/app_icon.png
+  adaptive_icon_background: "#2B124C"
+  adaptive_icon_foreground: assets/icons/app_icon.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#2B124C"
+  image: assets/splash/splash_logo.png
+  branding: assets/splash/splash_branding.png
+  color_dark: "#2B124C"
+  image_dark: assets/splash/splash_logo.png
+  branding_dark: assets/splash/splash_branding.png
+  android_12:
+    color: "#2B124C"
+    image: assets/splash/splash_logo.png
+    icon_background_color: "#2B124C"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/game_of_thrones_logo.png
+    - assets/images/game_of_thrones_logo_cropped.png
+    - assets/icons/app_icon.png
+    - assets/splash/splash_logo.png
+    - assets/splash/splash_branding.png
